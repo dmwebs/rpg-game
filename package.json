@@ -4,7 +4,7 @@
 	"description": "RPG game",
 	"scripts": {
 		"lint": "npx eslint src/**/*.js",
-		"prettier": "npx prettier write .",
+		"prettier": "npx prettier --write .",
 		"build": "webpack",
 		"prepare": "husky install"
 	},
