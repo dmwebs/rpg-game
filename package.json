@@ -5,8 +5,10 @@
 	"scripts": {
 		"lint": "npx eslint src/**/*.js",
 		"prettier": "npx prettier --write .",
-		"build": "webpack",
-		"prepare": "husky install"
+		"prepare": "husky install",
+		"build:dev": "env NODE_ENV=development webpack",
+		"build": "env NODE_ENV=production webpack",
+		"start": "webpack server"
 	},
 	"repository": {
 		"type": "git",
